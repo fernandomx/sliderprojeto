@@ -21,6 +21,10 @@ android {
         }
     }
 
+    dataBinding {
+        enabled = true
+    }
+
 
 }
 
@@ -34,6 +38,8 @@ dependencies {
 
     //implementation 'com.heinrichreimersoftware:material-intro:x.y.z' -> esta dependencia deu erro
 
-    compile 'com.heinrichreimersoftware:material-intro:1.5.7'
+    compile 'com.heinrichreimersoftware:material-intro:1.5.7' //--> slider
+
+    //compile 'com.heinrichreimersoftware:material-intro:1.6.2' //--> slider
 
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.heinrichreimersoftware.materialintro.app.IntroActivity;
+import com.heinrichreimersoftware.materialintro.slide.FragmentSlide;
 import com.heinrichreimersoftware.materialintro.slide.SimpleSlide;
 
 public class MainActivity extends IntroActivity {
@@ -14,6 +15,24 @@ public class MainActivity extends IntroActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main); com o Slider esse layout não será necessário
 
+
+        //usando Fragment customizado
+        addSlide(new FragmentSlide.Builder()
+            .background(android.R.color.white)
+            .fragment(R.layout.intro_1)
+            .build()
+        );
+
+
+        addSlide(new FragmentSlide.Builder()
+                .background(android.R.color.white)
+                .fragment(R.layout.intro_2)
+                .build()
+        );
+
+
+
+        /*
         setButtonBackVisible(false); //desativa botão de voltar
         setButtonNextVisible(false); //desativa botão de proximo
 
@@ -40,7 +59,7 @@ public class MainActivity extends IntroActivity {
                 .background(android.R.color.holo_orange_light)
                 .build()
         );
-
+*/
 
     }
 }
